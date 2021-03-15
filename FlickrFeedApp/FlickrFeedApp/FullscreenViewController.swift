@@ -1,10 +1,3 @@
-//
-//  FullscreenViewController.swift
-//  FlickrFeedApp
-//
-//  Created by Egor Vedeneev on 14.03.2021.
-//
-
 import UIKit
 import Kingfisher
 

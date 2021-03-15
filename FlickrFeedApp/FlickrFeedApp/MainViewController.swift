@@ -1,10 +1,3 @@
-//
-//  MainViewController.swift
-//  FlickrFeedApp
-//
-//  Created by Egor Vedeneev on 14.03.2021.
-//
-
 import UIKit
 import Alamofire
 
@@ -13,7 +6,7 @@ class MainViewController: UIViewController {
     var fetchedItems = [Items]()
     var fetchedItem = [Item]()
     var fetchedMedia = [Media]()
-    var sort: SortType = .none
+//    var sort: SortType = .none
     
     
     
@@ -41,11 +34,11 @@ class MainViewController: UIViewController {
     }
     
     
-    @IBAction func SegmentedControlSortChanged(_ sender: UISegmentedControl) {
-        
-        self.sort = SortType(rawValue: sender.selectedSegmentIndex) ?? .none
-        print("SegmentedControlValueChanged")
-    }
+//    @IBAction func SegmentedControlSortChanged(_ sender: UISegmentedControl) {
+//
+//        self.sort = SortType(rawValue: sender.selectedSegmentIndex) ?? .none
+//        print("SegmentedControlValueChanged")
+//    }
     
     
     
@@ -114,20 +107,19 @@ extension MainViewController: UICollectionViewDelegateFlowLayout{
 
     //MARK: Count of elements in a row
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        let yourWidth = collectionView.bounds.width/3.0
-            let yourHeight = yourWidth
-
-            return CGSize(width: yourWidth, height: yourHeight)
+        let w = collectionView.bounds.width/3.0
+        let h = collectionView.bounds.height/3.0
+        return CGSize(width: w, height: h)
     }
 }
 
 extension MainViewController: UICollectionViewDataSource{
     
-    enum SortType: Int{
-        case none
-        case byName
-        case byDate
-    }
+//    enum SortType: Int{
+//        case none
+//        case byName
+//        case byDate
+//    }
     
     //MARK: Count of cell
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
@@ -142,18 +134,17 @@ extension MainViewController: UICollectionViewDataSource{
        
         let cell = CollectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as! CollectionViewCell
         
-        let titleArray = [String]()
-        let dateArray = [String]()
-        
         let titletext = fetchedItem[indexPath.row].title
-        let datetext = fetchedItem[indexPath.row].published
+        
+        let datetext1 = fetchedItem[indexPath.row].published.replacingOccurrences(of: "T", with: " ")
+        let datetext = datetext1.replacingOccurrences(of: "Z", with: "")
         let imageview = fetchedItem[indexPath.row].media.m
         
         cell.imageURL = imageview
         
-        cell.TitleLabel.text = titletext ?? "tttttt"
+        cell.TitleLabel.text = titletext
         print(titletext)
-        cell.dateLabel.text = datetext ?? "dddddd"
+        cell.dateLabel.text = datetext
         print(datetext)
         return cell
     }
