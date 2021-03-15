@@ -3,6 +3,8 @@ import Kingfisher
 
 class CollectionViewCell: UICollectionViewCell {
     
+    public var cellImage: UIImage?
+
     
     @IBOutlet weak var ImageView: UIImageView!
     
@@ -16,6 +18,7 @@ class CollectionViewCell: UICollectionViewCell {
             if let imageURL = imageURL, let url = URL(string: imageURL){
                 
                 ImageView.kf.setImage(with: url)
+                cellImage = ImageView.image
             
             } else {
                 

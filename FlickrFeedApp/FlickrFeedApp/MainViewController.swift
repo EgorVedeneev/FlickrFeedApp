@@ -12,6 +12,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var CollectionView: UICollectionView!
     
+    @IBOutlet weak var photoCell: CollectionViewCell!
     
     
     override func viewDidLoad() {
@@ -30,6 +31,7 @@ class MainViewController: UIViewController {
             fullScreen.fullPhoto = fetchedItem[indexPath.row].media.m
             fullScreen.titleText = fetchedItem[indexPath.row].title
             fullScreen.publishedText = fetchedItem[indexPath.row].published
+            fullScreen.tagsText = fetchedItem[indexPath.row].tags
         }
     }
     
@@ -136,8 +138,7 @@ extension MainViewController: UICollectionViewDataSource{
         
         let titletext = fetchedItem[indexPath.row].title
         
-        let datetext1 = fetchedItem[indexPath.row].published.replacingOccurrences(of: "T", with: " ")
-        let datetext = datetext1.replacingOccurrences(of: "Z", with: "")
+        let datetext = (fetchedItem[indexPath.row].published.replacingOccurrences(of: "T", with: " ")).replacingOccurrences(of: "Z", with: "")
         let imageview = fetchedItem[indexPath.row].media.m
         
         cell.imageURL = imageview

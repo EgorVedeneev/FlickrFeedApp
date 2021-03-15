@@ -15,7 +15,7 @@
 		7458CEFF25FE9819001BEA42 /* FlickrFeedAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7458CEFE25FE9819001BEA42 /* FlickrFeedAppTests.swift */; };
 		7458CF0A25FE9819001BEA42 /* FlickrFeedAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7458CF0925FE9819001BEA42 /* FlickrFeedAppUITests.swift */; };
 		7458CF2425FE9992001BEA42 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7458CF2325FE9992001BEA42 /* MainViewController.swift */; };
-		7458CF2925FE99D0001BEA42 /* Data Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7458CF2825FE99D0001BEA42 /* Data Model.swift */; };
+		7458CF2925FE99D0001BEA42 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7458CF2825FE99D0001BEA42 /* DataModel.swift */; };
 		7458CF2E25FE9A4F001BEA42 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7458CF2D25FE9A4F001BEA42 /* CollectionViewCell.swift */; };
 		7458CF3325FE9AD8001BEA42 /* FullscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7458CF3225FE9AD8001BEA42 /* FullscreenViewController.swift */; };
 		7458CF3C25FE9BF5001BEA42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7458CF3A25FE9BF5001BEA42 /* Main.storyboard */; };
@@ -53,7 +53,7 @@
 		7458CF0925FE9819001BEA42 /* FlickrFeedAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrFeedAppUITests.swift; sourceTree = "<group>"; };
 		7458CF0B25FE9819001BEA42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7458CF2325FE9992001BEA42 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		7458CF2825FE99D0001BEA42 /* Data Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Model.swift"; sourceTree = "<group>"; };
+		7458CF2825FE99D0001BEA42 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		7458CF2D25FE9A4F001BEA42 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		7458CF3225FE9AD8001BEA42 /* FullscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenViewController.swift; sourceTree = "<group>"; };
 		7458CF3B25FE9BF5001BEA42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 				7458CF3A25FE9BF5001BEA42 /* Main.storyboard */,
 				7458CEF525FE9819001BEA42 /* Info.plist */,
 				7458CF2325FE9992001BEA42 /* MainViewController.swift */,
-				7458CF2825FE99D0001BEA42 /* Data Model.swift */,
+				7458CF2825FE99D0001BEA42 /* DataModel.swift */,
 				7458CF2D25FE9A4F001BEA42 /* CollectionViewCell.swift */,
 				7458CF3225FE9AD8001BEA42 /* FullscreenViewController.swift */,
 			);
@@ -339,7 +339,7 @@
 				7458CF3325FE9AD8001BEA42 /* FullscreenViewController.swift in Sources */,
 				7458CF2425FE9992001BEA42 /* MainViewController.swift in Sources */,
 				7458CEE825FE9818001BEA42 /* AppDelegate.swift in Sources */,
-				7458CF2925FE99D0001BEA42 /* Data Model.swift in Sources */,
+				7458CF2925FE99D0001BEA42 /* DataModel.swift in Sources */,
 				7458CEEA25FE9818001BEA42 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
